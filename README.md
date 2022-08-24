@@ -9,4 +9,6 @@ The ideal was to key the speaker with a TIP120, but I don't have one, so it's go
 
 To make the program that was going to be uploaded to the Arduino, I used two libraries: the LiquidCrystal, that all the low level action to display things in the spaces in the lcd display; and the [PCM](https://github.com/damellis/PCM) library, that allows to play sounds that were previously encoded within an arduino - [here](https://www.instructables.com/Talking-Arduino-Playing-a-MP3-With-Arduino-Without/) you can find the encoder.
 
-The code was divided into some header files. The `button.h` file has the `button` class, that initializes and handles the input of a button. The `entities.h` has the classes related with the entities in the game, such as the ship, called `Nave`, and so on. The `sound.h` has all the audio samples already encoded
+The code was divided into some header files. The `button.h` file has the `button` class, that initializes and handles the input of a button. The `entities.h` has the classes related with the entities in the game, such as the ship, called `Nave`, and so on. The `sound.h` has all the already encoded audio samples. The `sprite.h` has all the "sprites" used in the game by the lcd library.
+
+The sound samples had to be too short due to the program memory limitation of the Arduino. And Because of this I the program uses a technique called object pooling, that basically is use and reuse the same objects once loaded in the start of the program to avoid dinamically alocate memory and take the risk of run out of memory
