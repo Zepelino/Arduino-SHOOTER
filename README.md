@@ -11,4 +11,6 @@ To make the program that was going to be uploaded to the Arduino, I used two lib
 
 The code was divided into some header files. The `button.h` file has the `button` class, that initializes and handles the input of a button. The `entities.h` has the classes related with the entities in the game, such as the ship, called `Nave`, and so on. The `sound.h` has all the already encoded audio samples. The `sprite.h` has all the "sprites" used in the game by the lcd library.
 
-The sound samples had to be too short due to the program memory limitation of the Arduino. And Because of this I the program uses a technique called object pooling, that basically is use and reuse the same objects once loaded in the start of the program to avoid dinamically alocate memory and take the risk of run out of memory
+The sound samples had to be too short due to the program memory limitation of the Arduino. And Because of this the program also uses a technique called object pooling, that basically is use and reuse the same objects once loaded in the start of the program to avoid dinamically alocate memory and take the risk of run out of memory - so, no arraylists containing al the entities to make it easier to iterate through all the objects, that's why all the objects are instaciated manually as well.
+
+
