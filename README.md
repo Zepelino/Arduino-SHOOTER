@@ -10,7 +10,7 @@ You must have installed the Arduino IDE and, of course, an Arduino to play the g
 
 Follow this schema:
 ![Circuitry](https://github.com/Zepelino/Arduino-SHOOTER/blob/main/circuitry.png)
-The ideal was to switch the speaker with a TIP120, but I don't have one, so it's going to be direct connected to the arduino
+The ideal was to switch the speaker with a transistor, but I don't have one, so it's going to be direct connected to the arduino
 
 There are those three button to control things in the game: the red one is the action button that advances in the menus and shoots in the game. The white ones makes you move up and down in the lanes in the game. As well, there is that speaker to reproduce de sounds
 
